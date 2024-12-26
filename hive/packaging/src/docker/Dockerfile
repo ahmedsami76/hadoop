@@ -37,7 +37,7 @@ FROM ubuntu as buildarchive
 ARG HADOOP_VERSION
 ARG HIVE_VERSION
 ARG TEZ_VERSION
-ONBUILD RUN apt-get update && apt-get -y install wget
+ONBUILD RUN apt-get update && apt-get -y install wget passwd 
 ONBUILD RUN wget https://archive.apache.org/dist/tez/$TEZ_VERSION/apache-tez-$TEZ_VERSION-bin.tar.gz && \
  wget https://archive.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz
 ONBUILD COPY ./apache-hive-$HIVE_VERSION-bin.tar.gz /opt
@@ -50,6 +50,8 @@ ARG HADOOP_VERSION
 ARG HIVE_VERSION
 ARG TEZ_VERSION
 
+RUN echo "root:P@ssw0rd" | chpasswd 
+
 RUN tar -xzvf /opt/hadoop-$HADOOP_VERSION.tar.gz -C /opt/ && \
     rm -rf /opt/hadoop-$HADOOP_VERSION/share/doc/* && \
     tar -xzvf /opt/apache-hive-$HIVE_VERSION-bin.tar.gz -C /opt/ && \
@@ -57,7 +59,7 @@ RUN tar -xzvf /opt/hadoop-$HADOOP_VERSION.tar.gz -C /opt/ && \
     tar -xzvf /opt/apache-tez-$TEZ_VERSION-bin.tar.gz -C /opt && \
     rm -rf /opt/apache-tez-$TEZ_VERSION-bin/share/*
 
-FROM openjdk:8-jre-slim AS run
+FROM openjdk:8-jdk-slim AS run
 
 ARG HADOOP_VERSION
 ARG HIVE_VERSION

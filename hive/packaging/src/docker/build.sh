@@ -109,7 +109,7 @@ cp    "$SOURCE_DIR/packaging/src/docker/Dockerfile" "$WORK_DIR/"
 docker build \
         "$WORK_DIR" \
         -f "$WORK_DIR/Dockerfile" \
-        -t "$repo/hive:$HIVE_VERSION" \
+        -t "hive:$HIVE_VERSION" \
         --build-arg "BUILD_ENV=unarchive" \
         --build-arg "HIVE_VERSION=$HIVE_VERSION" \
         --build-arg "HADOOP_VERSION=$HADOOP_VERSION" \
