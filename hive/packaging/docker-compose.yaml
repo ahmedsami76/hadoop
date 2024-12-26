@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  hue:
+    image: gethue/hue
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./hue.ini:/usr/share/hue/desktop/conf/hue.ini
+    container_name: hue
+    hostname: hue     # Set the hostname for the hue service
+
+  hive:
+    image: apache/hive:4.0.0
+    ports:
+      - "10000:10000"
+      - "10002:10002"
+    volumes:
+      - ./data:/data
+    environment:
+      - SERVICE_NAME=hiveserver2
+    container_name: hive
+    hostname: hive    # Set the hostname for the hive service
+    restart: unless-stopped
