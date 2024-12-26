@@ -8,7 +8,7 @@ services:
     volumes:
       - ./hue.ini:/usr/share/hue/desktop/conf/hue.ini
     container_name: hue
-    hostname: hue     # Set the hostname for the hue service
+    hostname: hue     
 
   hive:
     image: apache/hive:4.0.0
@@ -20,5 +20,5 @@ services:
     environment:
       - SERVICE_NAME=hiveserver2
     container_name: hive
-    hostname: hive    # Set the hostname for the hive service
+    hostname: hive    
     restart: unless-stopped
