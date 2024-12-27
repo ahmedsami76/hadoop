@@ -1,0 +1,6 @@
+# Ignore all ORC files
+./file_formats/*.orc
+./file_formats/*.parquet
+./file_formats/*.yaml
+./file_formats/*.avro
+/file_formats/*/*/*.parquet
