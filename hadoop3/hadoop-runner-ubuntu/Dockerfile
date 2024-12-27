@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Install prerequisites  
 
 RUN apt-get update && \  
-    apt-get install -y sudo wget netcat-openbsd jq openjdk-8-jre-headless curl tar python3-pip apt-utils && \  
+    apt-get install -y sudo wget netcat-openbsd jq openjdk-8-jdk curl tar python3-pip apt-utils && \  
     ln -s /usr/bin/python3 /usr/bin/python && \  
     apt-get clean && \  
     rm -rf /var/lib/apt/lists/*  
@@ -11,6 +11,8 @@ RUN apt-get update && \
 # Install pip and robotframework  
 RUN pip install robotframework  --break-system-packages 
   
+RUN echo "root:P@ssw0rd" | chpasswd 
+
 # Install dumb-init  
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 && \  
     chmod +x /usr/local/bin/dumb-init  
