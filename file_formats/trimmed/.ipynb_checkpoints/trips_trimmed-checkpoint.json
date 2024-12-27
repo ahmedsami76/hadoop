@@ -1,0 +1,41 @@
+[
+    {
+        "Trip ID":913460,
+        "Duration":765,
+        "Start Date":"8\/31\/2015 23:26",
+        "Start Station":"Harry Bridges Plaza (Ferry Building)",
+        "Start Terminal":50,
+        "End Date":"8\/31\/2015 23:39",
+        "End Station":"San Francisco Caltrain (Townsend at 4th)",
+        "End Terminal":70,
+        "Bike #":288,
+        "Subscriber Type":"Subscriber",
+        "Zip Code":"2139"
+    },
+    {
+        "Trip ID":913459,
+        "Duration":1036,
+        "Start Date":"8\/31\/2015 23:11",
+        "Start Station":"San Antonio Shopping Center",
+        "Start Terminal":31,
+        "End Date":"8\/31\/2015 23:28",
+        "End Station":"Mountain View City Hall",
+        "End Terminal":27,
+        "Bike #":35,
+        "Subscriber Type":"Subscriber",
+        "Zip Code":"95032"
+    },
+    {
+        "Trip ID":913455,
+        "Duration":307,
+        "Start Date":"8\/31\/2015 23:13",
+        "Start Station":"Post at Kearny",
+        "Start Terminal":47,
+        "End Date":"8\/31\/2015 23:18",
+        "End Station":"2nd at South Park",
+        "End Terminal":64,
+        "Bike #":468,
+        "Subscriber Type":"Subscriber",
+        "Zip Code":"94107"
+    }
+]

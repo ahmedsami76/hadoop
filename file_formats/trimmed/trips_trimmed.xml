@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<Trips>
+	<item>
+		<Trip_ID>913460</Trip_ID>
+		<Duration>765</Duration>
+		<Start_Date>8/31/2015 23:26</Start_Date>
+		<Start_Station>Harry Bridges Plaza (Ferry Building)</Start_Station>
+		<Start_Terminal>50</Start_Terminal>
+		<End_Date>8/31/2015 23:39</End_Date>
+		<End_Station>San Francisco Caltrain (Townsend at 4th)</End_Station>
+		<End_Terminal>70</End_Terminal>
+		<key name="Bike #">288</key>
+		<Subscriber_Type>Subscriber</Subscriber_Type>
+		<Zip_Code>2139</Zip_Code>
+	</item>
+	<item>
+		<Trip_ID>913459</Trip_ID>
+		<Duration>1036</Duration>
+		<Start_Date>8/31/2015 23:11</Start_Date>
+		<Start_Station>San Antonio Shopping Center</Start_Station>
+		<Start_Terminal>31</Start_Terminal>
+		<End_Date>8/31/2015 23:28</End_Date>
+		<End_Station>Mountain View City Hall</End_Station>
+		<End_Terminal>27</End_Terminal>
+		<key name="Bike #">35</key>
+		<Subscriber_Type>Subscriber</Subscriber_Type>
+		<Zip_Code>95032</Zip_Code>
+	</item>
+	<item>
+		<Trip_ID>913455</Trip_ID>
+		<Duration>307</Duration>
+		<Start_Date>8/31/2015 23:13</Start_Date>
+		<Start_Station>Post at Kearny</Start_Station>
+		<Start_Terminal>47</Start_Terminal>
+		<End_Date>8/31/2015 23:18</End_Date>
+		<End_Station>2nd at South Park</End_Station>
+		<End_Terminal>64</End_Terminal>
+		<key name="Bike #">468</key>
+		<Subscriber_Type>Subscriber</Subscriber_Type>
+		<Zip_Code>94107</Zip_Code>
+	</item>
+</Trips>
