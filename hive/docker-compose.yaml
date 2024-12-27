@@ -6,7 +6,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./hue.ini:/usr/share/hue/desktop/conf/hue.ini
+      - ./conf/hue.ini:/usr/share/hue/desktop/conf/hue.ini
     container_name: hue
     hostname: hue     
 
@@ -17,6 +17,7 @@ services:
       - "10002:10002"
     volumes:
       - ./data:/data
+      - ./conf/hive-site.xml:/opt/hive/conf/hive-site.xml
     environment:
       - SERVICE_NAME=hiveserver2
     container_name: hive
